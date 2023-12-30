@@ -1,3 +1,11 @@
+// Using Angular and Angular Material
+https://angular.io/
+https://material.angular.io/
+
+// Custom angular material theme
+https://material.angular.io/guide/theming#defining-a-theme
+https://www.digitalocean.com/community/tutorials/angular-angular-material-custom-theme
+
 # NewsletterSignUpAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
