@@ -1,15 +1,49 @@
-<h2>Test text</h2>
+<div class="content-container">
+  <div class="text-container">
+    <div class="text-headline">Stay Updated!</div>
+    <div>Join 60,000+ product managers receiving monthly updates on:</div>
 
-<!-- Change color: style="color:red" -->
-<mat-card>
-  <mat-card-header>Stay Updated!</mat-card-header>
-  <img
-    mat-card-lg-image
-    src="../../assets/images/illustration-sign-up-desktop.svg"
-  />
-  <mat-card-footer>
-    Email address
-    <!-- text input -->
-    <!-- button -->
-  </mat-card-footer>
-</mat-card>
+    <div>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="check_circle"
+        class="icon-color"
+      ></mat-icon
+      >Product discovery and building what matters
+    </div>
+    <div>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="check_circle"
+        class="icon-color"
+      ></mat-icon>
+      Measuring to ensure updates are a success
+    </div>
+    <div>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="check_circle"
+        class="icon-color"
+      ></mat-icon>
+      And much more!
+    </div>
+
+    <email-input />
+
+    <button mat-button class="submit-btn">
+      Subscribe to monthly newsletter
+    </button>
+  </div>
+
+  <div class="img-cont">
+    <img
+      class="img"
+      layout-fill
+      mat-card-sm-image
+      src="../../assets/images/illustration-sign-up-mobile.svg"
+    />
+  </div>
+</div>

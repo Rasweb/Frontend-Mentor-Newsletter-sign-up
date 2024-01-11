@@ -1,0 +1,45 @@
+@use "../../utilities/variables";
+// @use '../../utilities/variables';
+
+// .page-container {
+//   background-color: variables.$primaryColor;
+// }
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 375px;
+}
+
+// TODO: set width to lower then 100% for mobile
+.text-container {
+  width: 100%;
+}
+
+.text-headline {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.icon-color {
+  color: variables.$primaryTomato;
+  // margin-bottom: -4px;
+}
+
+.submit-btn {
+  background-color: variables.$neutralDarkSlate;
+  color: variables.$neutralWhite !important;
+}
+
+.img-cont {
+  width: 375px;
+  height: auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
