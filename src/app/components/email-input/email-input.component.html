@@ -1,6 +1,6 @@
 <form class="example-form">
-  <div>Email address</div>
-  <mat-form-field class="example-full-width">
+  <div class="label-style">Email address</div>
+  <mat-form-field appearance="outline" class="form-padding example-full-width">
     <input
       type="email"
       matInput
@@ -9,7 +9,8 @@
     />
     @if (emailFormControl.hasError('email') &&
     !emailFormControl.hasError('required')) {
-    <mat-error>Valid email required</mat-error>
+    <mat-error class="above-input-error">Valid email required</mat-error>
+
     }
   </mat-form-field>
 </form>

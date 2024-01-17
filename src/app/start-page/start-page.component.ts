@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EmailInputComponent } from '../components/email-input/email-input.component';
+import { ListContainerComponent } from '../components/list-container/list-container.component';
 
 @Component({
   selector: 'start-page',
@@ -14,6 +15,7 @@ import { EmailInputComponent } from '../components/email-input/email-input.compo
     MatInputModule,
     MatFormFieldModule,
     EmailInputComponent,
+    ListContainerComponent,
   ],
   templateUrl: './start-page.component.html',
   styleUrl: './start-page.component.scss',

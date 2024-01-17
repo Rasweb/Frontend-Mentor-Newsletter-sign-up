@@ -1,0 +1,23 @@
+@use "../../../utilities/variables";
+
+.list-container {
+  padding-left: 1.5rem;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.9rem 0rem 0.2rem;
+}
+
+.icon-color {
+  color: variables.$primaryTomato;
+  display: inline;
+}
+
+.list-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 18rem;
+  padding-left: 1rem;
+}
