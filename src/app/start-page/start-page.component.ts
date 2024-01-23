@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EmailInputComponent } from '../components/email-input/email-input.component';
 import { ListContainerComponent } from '../components/list-container/list-container.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'start-page',
@@ -16,8 +17,13 @@ import { ListContainerComponent } from '../components/list-container/list-contai
     MatFormFieldModule,
     EmailInputComponent,
     ListContainerComponent,
+    RouterModule,
   ],
   templateUrl: './start-page.component.html',
   styleUrl: './start-page.component.scss',
 })
-export class StartPageComponent {}
+export class StartPageComponent {
+  subscribeEvent() {
+    console.log('hej');
+  }
+}

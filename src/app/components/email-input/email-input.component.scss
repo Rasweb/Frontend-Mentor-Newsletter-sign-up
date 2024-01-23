@@ -31,3 +31,17 @@
   padding: 2rem 0rem 0.5rem 1.5rem;
   color: variables.$neutralDarkSlate;
 }
+
+.submit-btn {
+  background-color: variables.$neutralDarkSlate;
+  color: variables.$neutralWhite !important;
+  width: 20rem;
+  font-weight: 500;
+  padding: 1.5rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.submit-btn:hover {
+  color: variables.$neutralWhite !important;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
