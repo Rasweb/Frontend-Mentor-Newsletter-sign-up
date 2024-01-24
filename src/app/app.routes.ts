@@ -5,5 +5,5 @@ import { LastPageComponent } from './last-page/last-page.component';
 
 export const routes: Routes = [
   { path: '', component: StartPageComponent },
-  { path: 'last', component: LastPageComponent },
+  { path: 'last/:email', component: LastPageComponent },
 ];

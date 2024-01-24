@@ -19,9 +19,12 @@
   position: absolute;
   bottom: 3.8rem;
   right: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: variables.$primaryTomato;
 }
 
-.form-padding {
+.padding-style {
   padding-left: 1.5rem;
 }
 
@@ -44,4 +47,8 @@
 .submit-btn:hover {
   color: variables.$neutralWhite !important;
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+
+.my-class {
+  color: variables.$primaryTomato !important;
 }

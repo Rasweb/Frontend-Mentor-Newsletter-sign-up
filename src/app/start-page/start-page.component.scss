@@ -1,9 +1,12 @@
 @use "../../utilities/variables";
-// @use '../../utilities/variables';
 
 // .page-container {
 //   background-color: variables.$primaryColor;
 // }
+
+// TODO: Fix the background color of the entire site using variable white
+// TODO: Fix the font family for the entire site
+// TODO: Do the responsive layout for desktop
 
 .content-container {
   display: flex;
@@ -22,9 +25,8 @@
   color: variables.$neutralDarkSlate;
 }
 
-.submit-btn {
-  background-color: variables.$neutralDarkSlate;
-  color: variables.$neutralWhite !important;
+.text-padd {
+  padding-left: 1.5rem;
 }
 
 .img-cont {

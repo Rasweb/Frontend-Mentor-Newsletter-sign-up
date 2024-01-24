@@ -1,1 +1,21 @@
-<div>Hej</div>
+<div class="main-container">
+  <div class="icon-ts">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Check icon"
+      fontIcon="check_circle"
+      class="icon-color"
+    ></mat-icon>
+
+    <div class="text-headline">Thanks for subscribing!</div>
+    <div class="paragraph-style">
+      A confirmation email has been sent to
+      <span class="email-style"> {{ receivedEmail }}</span
+      >. Please open it and click the button inside to confirm your
+      subscription.
+    </div>
+  </div>
+  <button mat-button class="dismiss-btn" (click)="dismissEvent()">
+    Dismiss message
+  </button>
+</div>

@@ -1,33 +1,25 @@
 <form class="example-form">
   <div class="label-style">Email address</div>
-  <mat-form-field appearance="outline" class="form-field-style">
-    @if (emailFormControl.hasError('email') &&
-    !emailFormControl.hasError('required')) {
-    <ng-container>
-      <input
-        type="email"
-        matInput
-        class="input-style"
-        [formControl]="emailFormControl"
-        placeholder="email@company.com"
-      />
-      <mat-error class="above-input-error">Valid email required</mat-error>
-    </ng-container>
-    } @else {
+  <mat-form-field appearance="outline" class="example-full-width padding-style">
     <input
       type="email"
       matInput
       [formControl]="emailFormControl"
       placeholder="email@company.com"
+      [class.my-class]="
+        emailFormControl.hasError('email') &&
+        !emailFormControl.hasError('required')
+      "
     />
-    } @if (emailFormControl.hasError('email') &&
+    @if (emailFormControl.hasError('email') &&
     !emailFormControl.hasError('required')) {
     <mat-error class="above-input-error">Valid email required</mat-error>
-
     }
   </mat-form-field>
 
-  <button mat-button class="submit-btn" (click)="submitEvent()">
-    Subscribe to monthly newsletter
-  </button>
+  <div class="padding-style">
+    <button mat-button class="submit-btn" (click)="submitEvent()">
+      Subscribe to monthly newsletter
+    </button>
+  </div>
 </form>

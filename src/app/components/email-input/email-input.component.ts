@@ -8,6 +8,7 @@ import {
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'email-input',
@@ -28,17 +29,15 @@ export class EmailInputComponent {
     Validators.email,
   ]);
 
-  submitEvent() {
-    console.log('hej', this.emailFormControl);
-    console.log('errors', this.emailFormControl.errors);
-    console.log('status', this.emailFormControl.status);
+  // Makes the this.router property available in the component
+  constructor(private router: Router) {}
 
+  submitEvent() {
     if (
       this.emailFormControl.errors === null &&
       this.emailFormControl.status === 'VALID'
     ) {
-      console.log('All Good');
-      // TODO: Send user to /last and also send the emailFormControl.value
+      this.router.navigate(['/last', this.emailFormControl.value]);
     }
   }
 }
