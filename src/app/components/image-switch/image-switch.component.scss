@@ -1,0 +1,15 @@
+.img-cont {
+  width: 375px;
+  height: auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+}

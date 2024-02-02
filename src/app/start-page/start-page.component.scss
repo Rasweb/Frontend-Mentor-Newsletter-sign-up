@@ -14,7 +14,6 @@
   width: 375px;
 }
 
-// TODO: set width to lower then 100% for mobile
 .text-container {
   width: 100%;
 }
@@ -29,15 +28,16 @@
   padding-left: 1.5rem;
 }
 
-.img-cont {
-  width: 375px;
-  height: auto;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-}
+@media only screen and (min-width: 1440px) {
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 
-.img {
-  height: 100%;
-  width: 100%;
+  .text-container {
+    width: 35%;
+  }
 }
