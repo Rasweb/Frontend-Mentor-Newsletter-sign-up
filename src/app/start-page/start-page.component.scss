@@ -1,13 +1,5 @@
 @use "../../utilities/variables";
 
-// .page-container {
-//   background-color: variables.$primaryColor;
-// }
-
-// TODO: Fix the background color of the entire site using variable white
-// TODO: Fix the font family for the entire site
-// TODO: Do the responsive layout for desktop
-
 .content-container {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -26,18 +18,30 @@
 
 .text-padd {
   padding-left: 1.5rem;
+  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 1440px) {
-  .content-container {
+  .entire-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+  }
+
+  .content-container {
+    background-color: variables.$neutralWhite;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
   }
 
   .text-container {
-    width: 35%;
+    width: 45%;
+  }
+
+  .text-headline {
+    font-size: 40px;
   }
 }
