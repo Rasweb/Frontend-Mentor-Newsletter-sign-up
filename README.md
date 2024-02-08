@@ -2,6 +2,10 @@
 
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+Built for:
+Mobile width: 375px
+Desktop width: 1440px
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -50,5 +54,4 @@ Users should be able to:
 ## Author
 
 - Website - [Rasmus]([https://www.your-site.com](https://personal-website-game-inspired.vercel.app/))
-- Frontend Mentor - [@Rasweb](https://www.frontendmentor.io/profile/yourusername)
-- 
+- Frontend Mentor - [@Rasweb](https://www.frontendmentor.io/profile/yourusername) 
